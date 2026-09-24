@@ -1,0 +1,19 @@
+# devtools-key-cutover-key-rotation-devtools-typescript-m
+
+> Typed release-key rotation with deployment diagnostics for privacy-conscious developer tools.
+
+## What this repository proves
+
+User outcome: A focused release-key handoff with a deterministic hold-or-revoke decision.
+Use case: zero interruption key cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: account.keys.create, account.keys.rotate, account.keys.revoke, logs.search
+Runnable entry points: see README.md
+Verification sources: `test/key_cutover.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

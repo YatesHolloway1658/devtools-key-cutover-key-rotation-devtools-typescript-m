@@ -1,0 +1,19 @@
+{
+  "name": "devtools-key-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --import tsx --test test/key_cutover.test.ts",
+    "typecheck": "tsc --noEmit",
+    "rotate": "tsx src/key_cutover.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}
